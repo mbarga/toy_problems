@@ -1,0 +1,107 @@
+\hypertarget{mylib_8h}{
+\section{mylib.h File Reference}
+\label{mylib_8h}\index{mylib.h@{mylib.h}}
+}
+
+
+My custom library of common functions.  
+
+
+{\ttfamily \#include \char`\"{}stddef.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}assert.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}stdlib.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}stdio.h\char`\"{}}\par
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structNode}{Node}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structNode}{Node} $\ast$ \hyperlink{mylib_8h_a2d50e5b1e981f0f92533b566df14587c}{createNode} ()
+\begin{DoxyCompactList}\small\item\em Allocate memory to create a node element. \end{DoxyCompactList}\item 
+struct \hyperlink{structNode}{Node} $\ast$ \hyperlink{mylib_8h_aa22dabc1ff03c3a25b485acd29206ee4}{addNode} (long long value, struct \hyperlink{structNode}{Node} $\ast$root)
+\begin{DoxyCompactList}\small\item\em Add node to tree. \end{DoxyCompactList}\item 
+void \hyperlink{mylib_8h_a98f256e9b26c397f4eff9bb3d6f454cf}{printTree} ()
+\begin{DoxyCompactList}\small\item\em Print out all the nodes in the tree. \end{DoxyCompactList}\item 
+void \hyperlink{mylib_8h_af34473c0019642d25569dffca5735344}{destroyTree} (struct \hyperlink{structNode}{Node} $\ast$)
+\begin{DoxyCompactList}\small\item\em Destroy the tree and free its memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+My custom library of common functions. 
+
+\subsection{Function Documentation}
+\hypertarget{mylib_8h_aa22dabc1ff03c3a25b485acd29206ee4}{
+\index{mylib.h@{mylib.h}!addNode@{addNode}}
+\index{addNode@{addNode}!mylib.h@{mylib.h}}
+\subsubsection[{addNode}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Node}$\ast$ addNode (
+\begin{DoxyParamCaption}
+\item[{long long}]{value, }
+\item[{struct {\bf Node} $\ast$}]{root}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}read\mbox{]}}}}
+\label{mylib_8h_aa22dabc1ff03c3a25b485acd29206ee4}
+
+
+Add node to tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to add as a node \\
+\hline
+{\em root} & The root of the tree to add node to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pointer to the node 
+\end{DoxyReturn}
+\hypertarget{mylib_8h_a2d50e5b1e981f0f92533b566df14587c}{
+\index{mylib.h@{mylib.h}!createNode@{createNode}}
+\index{createNode@{createNode}!mylib.h@{mylib.h}}
+\subsubsection[{createNode}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Node}$\ast$ createNode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}read\mbox{]}}}}
+\label{mylib_8h_a2d50e5b1e981f0f92533b566df14587c}
+
+
+Allocate memory to create a node element. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the node element created 
+\end{DoxyReturn}
+\hypertarget{mylib_8h_af34473c0019642d25569dffca5735344}{
+\index{mylib.h@{mylib.h}!destroyTree@{destroyTree}}
+\index{destroyTree@{destroyTree}!mylib.h@{mylib.h}}
+\subsubsection[{destroyTree}]{\setlength{\rightskip}{0pt plus 5cm}void destroyTree (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Node} $\ast$}]{}
+\end{DoxyParamCaption}
+)}}
+\label{mylib_8h_af34473c0019642d25569dffca5735344}
+
+
+Destroy the tree and free its memory. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{mylib_8h_a98f256e9b26c397f4eff9bb3d6f454cf}{
+\index{mylib.h@{mylib.h}!printTree@{printTree}}
+\index{printTree@{printTree}!mylib.h@{mylib.h}}
+\subsubsection[{printTree}]{\setlength{\rightskip}{0pt plus 5cm}void printTree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{mylib_8h_a98f256e9b26c397f4eff9bb3d6f454cf}
+
+
+Print out all the nodes in the tree. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
